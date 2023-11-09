@@ -28,3 +28,12 @@ Para la practica4 de Arquitectura y Programacion de sistemas en Internet vamos a
 .get("/eraseCocheCliente/:dni/:matricula") Introduciendo el dni del cliente y la matricula del vehiculo de su garage puede enviarlo al desguace(eliminarlo) su vehiculo
 
 .get("/eraseCocheConcesionario/:_id/:matricula") Introduciendo el _id del concesionario y la matricula del vehiculo que esta en venta puede descatalogar el vehiculo(eliminarlo) de su exposicion
+
+Nuestros obgetos tendran los siguientes atributos en la base de datos:
+
+- Coche = {_id:identificador_bd,matricula:string,modelo:string,color:string,precio:number}
+
+- Cliente = {_id:identificador_bd,dni:string,nombre:string,dinero:number,garage:array<Coche>}
+
+- Concesionario = {_id:identificador_bd,nombre:string,direccion:string,venta:array<Coche>,banco:number,permiso_venta:boolean}
+
