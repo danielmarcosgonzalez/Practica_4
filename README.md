@@ -5,7 +5,7 @@ Para la practica4 de Arquitectura y Programacion de sistemas en Internet vamos a
 
 .post("/addCliente") Nos permitira añadir a nuestra api un cliente
 
-.post("/addConcesionario") Nos permitira añadir a nuestra api un concesionario
+.post("/addConcesionario") Nos permitira añadir a nuestra api un concesionario. Permiso_venta poner true por defecto despues puede modificarlo con otro endpoint
 
 
 .get("/viewCochesdeCliente/:dni") Introduciendo el dni del cliente podremos ver los vehiculos de su garage
@@ -15,7 +15,7 @@ Para la practica4 de Arquitectura y Programacion de sistemas en Internet vamos a
 
 .put("/addDineroCliente/:dni") Introduciendo el dni del cliente añadimos dinero a su cuenta introducir el dinero por body{"dinero":example_dinero}
 
-.get("/blockVentaConcesionario/:_id/:permiso_venta") Introduciendo el _id del concesionario podemos activar o desactibar el bloqueo de venta introducir el valor por parametros /example_id/false El bloqueo se realiza cuando esta en falso el valor
+.get("/blockVentaConcesionario/:_id/:permiso_venta") Introduciendo el _id del concesionario podemos activar o desactivar el bloqueo de venta introducir el valor por parametros /example_id/false El bloqueo se realiza cuando esta en falso el valor
 
 
 .get("/sendCocheConcesionario/:_id/:matricula") Introduciendo el valor de _id del concesionario y la matricula del coche lo podemos enviar a la venta para que el concesionario venda el vehiculo
